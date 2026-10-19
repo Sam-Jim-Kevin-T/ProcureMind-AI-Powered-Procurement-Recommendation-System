@@ -1,0 +1,34 @@
+{
+    "status":  "no_match",
+    "message":  "No products satisfy the given requirements.",
+    "requirements":  {
+                         "max_price":  1500.0,
+                         "min_ram_gb":  16.0
+                     },
+    "orchestration":  {
+                          "mode":  "hybrid",
+                          "confidence":  0.75,
+                          "warnings":  [
+                                           "LLM normalization failed; used deterministic payload mapping.",
+                                           "max_price=1500 is outside typical known-data range [41340, 154340] for offer_price."
+                                       ],
+                          "unknown_fields":  [
+
+                                             ],
+                          "resolved_requirements":  {
+                                                        "max_price":  1500.0,
+                                                        "min_ram_gb":  16.0
+                                                    },
+                          "exclude_high_risk_effective":  false,
+                          "weights_preset_effective":  null,
+                          "llm_used":  false,
+                          "llm_provider":  "openai",
+                          "llm_error":  "Error code: 429 - {\u0027error\u0027: {\u0027message\u0027: \u0027You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\u0027, \u0027type\u0027: \u0027insufficient_quota\u0027, \u0027param\u0027: None, \u0027code\u0027: \u0027insufficient_quota\u0027}}",
+                          "agents":  [
+                                         "RequirementExtractionAgent",
+                                         "DataQualityAgent",
+                                         "PolicyAgent",
+                                         "RankingAgent"
+                                     ]
+                      }
+}

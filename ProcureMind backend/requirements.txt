@@ -1,0 +1,16 @@
+# Core backend dependencies
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+joblib==1.4.2
+
+# API layer
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+SQLAlchemy==2.0.35
+psycopg[binary]==3.2.1
+
+# Mandatory LLM normalization support
+python-dotenv==1.0.1
+boto3==1.35.33

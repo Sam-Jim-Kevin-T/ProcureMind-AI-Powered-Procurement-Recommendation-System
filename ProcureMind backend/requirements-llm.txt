@@ -1,0 +1,3 @@
+-r requirements.txt
+
+# LLM dependencies are now mandatory and included in requirements.txt.
